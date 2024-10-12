@@ -22,7 +22,7 @@ html, body{
   -webkit-tap-highlight-color : rgba(0,0,0,0);
 }
 html{
-  font-size: 10px;
+  font-size: 11px;
 }
 @media screen and (max-width: 330px) {
     html{

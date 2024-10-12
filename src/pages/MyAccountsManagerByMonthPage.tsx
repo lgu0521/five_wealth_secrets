@@ -1,11 +1,12 @@
 // 나의 전체 통장을 확인하고 추가하거나 상세 통장 내역을 확인할 수 있는 페이지
 
 import Typography from "src/atoms/Typograpy";
-import { useAccountsAPI } from "../api/Accounts/accounts"
-import { Link } from "react-router-dom"
+import { useAccountsMonthList } from "../api/Accounts/accounts"
+import { Link, useParams } from "react-router-dom"
 
-const MyAccountsManagerPage = () => {
-    const { isLoading, data } = useAccountsAPI();
+const MyAccountsManagerByMonthPage = () => {
+    const { month } = useParams();
+    const { isLoading, data } = useAccountsMonthList(month || "");
 
     if (isLoading) {
         return <div>로딩중...</div>
@@ -43,7 +44,7 @@ const MyAccountsManagerPage = () => {
                                 </div>
                                 <div style={{ display: "flex", justifyContent: "space-between", marginTop: "0.5rem" }}>
                                     <Typography.BodySmall>{account.source}</Typography.BodySmall>
-                                    <Typography.BodySmall>{account.credit.toLocaleString()}원</Typography.BodySmall>
+                                    <Typography.BodySmall>{(account.credit - account.debit).toLocaleString()}원</Typography.BodySmall>
                                 </div>
                             </Link>
                             <Typography.BodySmall style={{ marginTop: "2rem" }}>{account.createdAt.split(" ")[0]}</Typography.BodySmall>
@@ -55,4 +56,4 @@ const MyAccountsManagerPage = () => {
     )
 }
 
-export default MyAccountsManagerPage
+export default MyAccountsManagerByMonthPage

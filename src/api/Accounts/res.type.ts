@@ -1,8 +1,14 @@
+export type MyAccountsCalendarRES = {
+    month: string;
+    total_credit: number;
+}
+
 export type MyAccountsRES = {
     id: number;
     name: string;
     source: string;
     credit: number;
+    debit: number;
     createdAt: string;
     updatedAt: string;
 }

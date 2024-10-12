@@ -1,8 +1,28 @@
 import axios from "axios";
 import { UseMutationResult, UseQueryResult, useMutation, useQuery, useQueryClient } from "react-query";
-import { AccountDetailsHistoryRES, AccountDetailsRES, MyAccountsRES, RatioOfAccountsRES } from "./res.type";
+import { AccountDetailsHistoryRES, AccountDetailsRES, MyAccountsCalendarRES, MyAccountsRES, RatioOfAccountsRES } from "./res.type";
 import { CreateAccountDetailsREQ, CreateAccountsREQ, DeleteAccountDetailsREQ, EditAccountDetailsREQ } from "./req.type";
 import { API_DEFAULT_DTO } from "../api.type";
+
+
+export const useMyCalenderAPI = (): UseQueryResult<MyAccountsCalendarRES[], Error> => {
+    const fetch = async () => {
+        const res = await axios.get("http://localhost:8000/my/calendar");
+        return res.data.data;
+    }
+
+    return useQuery(["my", "calendar"], fetch);
+}
+
+
+export const useAccountsMonthList = (month: string): UseQueryResult<MyAccountsRES[], Error> => {
+    const fetch = async () => {
+        const res = await axios.get(`http://localhost:8000/my/calendar/${month}`);
+        return res.data.data;
+    }
+
+    return useQuery(["my", "accounts", month], fetch);
+}
 
 export const useAccountsAPI = (): UseQueryResult<MyAccountsRES[], Error> => {
     const fetch = async () => {

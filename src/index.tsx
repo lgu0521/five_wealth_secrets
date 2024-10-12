@@ -1,7 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import MyAccountsManagerPage from './pages/MyAccountsManagerPage';
 import MyAccountDetailsPage from './pages/MyAccountDetailsPage';
 import MyAccountAddPage from './pages/MyAccountAddPage';
 import { QueryClient, QueryClientProvider } from 'react-query';
@@ -11,11 +10,18 @@ import MyAccountDetailsEditPage from './pages/MyAccountDetailsEditPage';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './styles/global-styles';
 import { theme } from './styles/theme';
+import MyAccountsCalendarPage from './pages/MyCalendarPage';
+import MyAccountsManagerByMonthPage from './pages/MyAccountsManagerByMonthPage';
+import MySrt from './pages/MySrt';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MyAccountsManagerPage />
+    element: <MySrt />
+  },
+  {
+    path: "/:month",
+    element: <MyAccountsManagerByMonthPage />
   },
   {
     path: "/my-accounts/:accountId",

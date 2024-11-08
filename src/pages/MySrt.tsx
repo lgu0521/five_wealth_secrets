@@ -114,6 +114,12 @@ const MySrt = () => {
                                     <Typography12 fontWeight={500} ls={-0.1} color="#5F1D4A">사용가능</Typography12>
                                 </ColumnBox>
                             </ColumnBox>
+                            <ColumnBox gap={0.9} ai="center" jc="center">
+                                <NotUsedSrtImgWrapper src={NotUsedSrtImg} alt='not_used_srt' />
+                                <ColumnBox gap={0.1} ai="center">
+                                    <Typography12 fontWeight={500} ls={-0.1} color="#5F1D4A">사용가능</Typography12>
+                                </ColumnBox>
+                            </ColumnBox>
                             {/* <ColumnBox gap={0.9} ai="center" jc="center">
                                 <NotUsedSrtImgWrapper src={NotUsedSrtImg} alt='not_used_srt' />
                                 <ColumnBox gap={0.1} ai="center">

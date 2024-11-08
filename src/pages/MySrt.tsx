@@ -1,14 +1,13 @@
 import styled from 'styled-components';
-import MYSRT from './my_srt2.png';
 import ArrowLeftIcon from './arrow_left.svg';
 import RoundArrowRightImg from './round_arrow_right.png';
-import RoundArrowRightUseingImg from './srt_useing.png';
+import RoundArrowRightUseingImg from './srt_useing_612.png';
 import ChangeImg from './change.png';
 import NotUsedSrtImg from './srt_not_used.png'
-import UsedSrt from './srt_used.png'
 import QrCodeImg from './qr_code.png'
 import InfiniteLogoCarousel from './InfiniteLogoCarousel';
 import Used615Srt from './srt_615_used.png';
+
 const MySrt = () => {
     return (
         // <img src={MYSRT} alt="MySrt" width="100%" height="100%"/>
@@ -21,12 +20,12 @@ const MySrt = () => {
             <PageBody>
                 <Table>
                     <TableHeader>
-                        <Typography16 fontWeight={700} color="#ffffff">2024년 10월 10일 ~ 2024년 11월 09일</Typography16>
+                        <Typography16 fontWeight={700} color="#ffffff">2024년 11월 02일 ~ 2024년 12월 01일</Typography16>
                     </TableHeader>
                     <TableBody>
                         <Frame1Wrapper>
                             <Typography16 color="#666666" fontWeight={500} style={{ marginRight: "0.2rem" }}>잔여횟수</Typography16>
-                            <Badge style={{ marginRight: "0.7rem" }}>4회</Badge>
+                            <Badge style={{ marginRight: "0.7rem" }}>8회</Badge>
                             <Typography12 color="#333333">승차 전 횟수차감 해주세요.</Typography12>
                         </Frame1Wrapper>
                         <Line style={{ marginTop: "0.5rem" }} />
@@ -37,10 +36,10 @@ const MySrt = () => {
                         </Frame2Wrapper>
                         <Line />
                         <Frame1Wrapper gap={0.3} style={{ padding: "0.9rem 0" }}>
-                            <Typography14 color="#8F3575" fontWeight={600} ls={-1}>SRT 606</Typography14>
-                            <Typography14 color="#292929">광주송정(07:54)</Typography14>
+                            <Typography14 color="#8F3575" fontWeight={600} ls={-1}>SRT 612</Typography14>
+                            <Typography14 color="#292929">광주송정(12:56)</Typography14>
                             <RoundArrowRightIconImg src={RoundArrowRightImg} alt='round_arrow_right' />
-                            <Typography14 color="#292929">동탄(09:37)</Typography14>
+                            <Typography14 color="#292929">동탄(14:18)</Typography14>
                         </Frame1Wrapper>
                         <Line />
                         <Frame1Wrapper gap={0.3} style={{ padding: "0.9rem 0" }}>
@@ -52,61 +51,43 @@ const MySrt = () => {
                         <Line />
                         <Frame3Wrapper>
                             <ColumnBox gap={0.5} ai="center" jc="center">
-                            <div style={{padding: "6px 3px 6px 0px"}}>
-                                <UsedSrtWrapper src={UsedSrt} alt='not_used_srt' />
+                                <div style={{ padding: "6px 3px 6px 0px" }}>
+                                    <UsedSrtWrapper src={Used615Srt} alt='not_used_srt' />
                                 </div>
                                 <ColumnBox gap={0.1} ai="center">
-                                    <Typography12 fontWeight={500} color="#333333">20241011</Typography12>
-                                    <Typography12 fontWeight={500} color="#333333">07:35:46</Typography12>
+                                    <Typography12 fontWeight={500} color="#333333">20241103</Typography12>
+                                    <Typography12 fontWeight={500} color="#333333">15:13:29</Typography12>
                                 </ColumnBox>
                             </ColumnBox>
                             <ColumnBox gap={0.5} ai="center" jc="center">
-                            <div style={{padding: "6px 3px 6px 0px"}}>
-                                <UsedSrtWrapper src={Used615Srt} alt='not_used_srt' />
+                                <div style={{
+                                    background: "#4C3049",
+                                    padding: "6px 3px 6px 0px",
+                                    borderRadius: "2px"
+                                }}>
+                                    <UseingSrtWrapper src={RoundArrowRightUseingImg} alt='useing_srt' />
                                 </div>
                                 <ColumnBox gap={0.1} ai="center">
-                                    <Typography12 fontWeight={500} color="#333333">20241013</Typography12>
-                                    <Typography12 fontWeight={500} color="#333333">07:40:05</Typography12>
+                                    <Typography12 fontWeight={500} color="#5F1D4A">20241108</Typography12>
+                                    <Typography12 fontWeight={500} color="#5F1D4A">12:22:05</Typography12>
                                 </ColumnBox>
                             </ColumnBox>
-                            <ColumnBox gap={0.5} ai="center" jc="center">
-                            <div style={{padding: "6px 3px 6px 0px"}}>
-                                <UsedSrtWrapper src={UsedSrt} alt='not_used_srt' />
-                                </div>
+                            <ColumnBox gap={0.9} ai="center" jc="center">
+                                <NotUsedSrtImgWrapper src={NotUsedSrtImg} alt='not_used_srt' />
                                 <ColumnBox gap={0.1} ai="center">
-                                    <Typography12 fontWeight={500} color="#333333">20241016</Typography12>
-                                    <Typography12 fontWeight={500} color="#333333">07:25:01</Typography12>
+                                    <Typography12 fontWeight={500} ls={-0.1} color="#5F1D4A">사용가능</Typography12>
                                 </ColumnBox>
                             </ColumnBox>
-                            <ColumnBox gap={0.5} ai="center" jc="center">
-                            <div style={{padding: "6px 3px 6px 0px"}}>
-                                <UsedSrtWrapper src={Used615Srt} alt='not_used_srt' />
-                                </div>
+                            <ColumnBox gap={0.9} ai="center" jc="center">
+                                <NotUsedSrtImgWrapper src={NotUsedSrtImg} alt='not_used_srt' />
                                 <ColumnBox gap={0.1} ai="center">
-                                    <Typography12 fontWeight={500} color="#333333">20241016</Typography12>
-                                    <Typography12 fontWeight={500} color="#333333">15:04:35</Typography12>
+                                    <Typography12 fontWeight={500} ls={-0.1} color="#5F1D4A">사용가능</Typography12>
                                 </ColumnBox>
                             </ColumnBox>
-                            <ColumnBox gap={0.5} ai="center" jc="center">
-                            <div style={{padding: "6px 3px 6px 0px"}}>
-                                <UsedSrtWrapper src={UsedSrt} alt='not_used_srt' />
-                                </div>
+                            <ColumnBox gap={0.9} ai="center" jc="center">
+                                <NotUsedSrtImgWrapper src={NotUsedSrtImg} alt='not_used_srt' />
                                 <ColumnBox gap={0.1} ai="center">
-                                    <Typography12 fontWeight={500} color="#333333">20241019</Typography12>
-                                    <Typography12 fontWeight={500} color="#333333">07:35:38</Typography12>
-                                </ColumnBox>
-                            </ColumnBox>
-                            <ColumnBox gap={0.5} ai="center" jc="center">
-                            <div style={{
-                                background: "#4C3049",
-                                padding: "6px 3px 6px 0px",
-                                borderRadius: "2px"
-                            }}>
-                                <UseingSrtWrapper src={RoundArrowRightUseingImg} alt='useing_srt' />
-                                </div>
-                                <ColumnBox gap={0.1} ai="center">
-                                    <Typography12 fontWeight={500} color="#5F1D4A">20241027</Typography12>
-                                    <Typography12 fontWeight={500} color="#5F1D4A">07:44:18</Typography12>
+                                    <Typography12 fontWeight={500} ls={-0.1} color="#5F1D4A">사용가능</Typography12>
                                 </ColumnBox>
                             </ColumnBox>
                             <ColumnBox gap={0.9} ai="center" jc="center">
@@ -152,7 +133,7 @@ const MySrt = () => {
                                 </ColumnBox>
                             </ColumnBox> */}
                         </Frame3Wrapper>
-                        <Line/>
+                        <Line />
                         <Frame4Wrapper>
                             <RowBox gap={0.5} ai="center" jc="space-between">
                                 <QrCodeImgWrapper src={QrCodeImg} alt='qr_code' />
@@ -165,8 +146,8 @@ const MySrt = () => {
                                         <Typography14 color="#005FB1" fontWeight={500} ls={-0.8}>[회수승차권 ]</Typography14>
                                         <Typography14 color="#005FB1" fontWeight={500} ls={-0.8}>만25세미만 1개월</Typography14>
                                     </RowBox>
-                                    <Typography14 color="#666666" fontWeight={500} ls={-0.8}>발권일자 : 2024년 10월 10일</Typography14>
-                                    <Typography16 color="#333333" fontWeight={500} ls={-0.8}>81557-1010-10008-85</Typography16>
+                                    <Typography14 color="#666666" fontWeight={500} ls={-0.8}>발권일자 : 2024년 10월 28일</Typography14>
+                                    <Typography16 color="#333333" fontWeight={500} ls={-0.8}>81559-1028-10007-20</Typography16>
                                 </ColumnBox>
                             </RowBox>
                             <InfiniteLogoCarousel />
@@ -183,12 +164,12 @@ const MySrt = () => {
                     </TableBody>
                 </Table>
                 <PageFooter>
-                <GrayButton>환불하기</GrayButton>
-                <PurpleButton>횟수차감</PurpleButton>
-                <GrayButton>영수증</GrayButton>
-            </PageFooter>
+                    <GrayButton>환불하기</GrayButton>
+                    <PurpleButton>횟수차감</PurpleButton>
+                    <GrayButton>영수증</GrayButton>
+                </PageFooter>
             </PageBody>
-            
+
         </PageWrapper>
     )
 }

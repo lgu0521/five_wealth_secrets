@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import ArrowLeftIcon from './arrow_left.svg';
 import RoundArrowRightImg from './round_arrow_right.png';
-import RoundArrowRightUseingImg from './srt_useing_612.png';
+import RoundArrowRightUseingImg from './srt_useing_652.png';
 import ChangeImg from './change.png';
 import NotUsedSrtImg from './srt_not_used.png'
 import QrCodeImg from './qr_code.png'
 import InfiniteLogoCarousel from './InfiniteLogoCarousel';
-import UsedSrt from './srt_652_used.png';
+import UsedSrt from './srt_615_used.png';
 
 const MySrt = () => {
     return (

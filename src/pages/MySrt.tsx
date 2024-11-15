@@ -6,7 +6,7 @@ import ChangeImg from './change.png';
 import NotUsedSrtImg from './srt_not_used.png'
 import QrCodeImg from './qr_code.png'
 import InfiniteLogoCarousel from './InfiniteLogoCarousel';
-import Used615Srt from './srt_615_used.png';
+import UsedSrt from './srt_652_used.png';
 
 const MySrt = () => {
     return (
@@ -25,7 +25,7 @@ const MySrt = () => {
                     <TableBody>
                         <Frame1Wrapper>
                             <Typography16 color="#666666" fontWeight={500} style={{ marginRight: "0.2rem" }}>잔여횟수</Typography16>
-                            <Badge style={{ marginRight: "0.7rem" }}>8회</Badge>
+                            <Badge style={{ marginRight: "0.7rem" }}>6회</Badge>
                             <Typography12 color="#333333">승차 전 횟수차감 해주세요.</Typography12>
                         </Frame1Wrapper>
                         <Line style={{ marginTop: "0.5rem" }} />
@@ -36,10 +36,10 @@ const MySrt = () => {
                         </Frame2Wrapper>
                         <Line />
                         <Frame1Wrapper gap={0.3} style={{ padding: "0.9rem 0" }}>
-                            <Typography14 color="#8F3575" fontWeight={600} ls={-1}>SRT 612</Typography14>
-                            <Typography14 color="#292929">광주송정(12:56)</Typography14>
+                            <Typography14 color="#8F3575" fontWeight={600} ls={-1}>SRT 652</Typography14>
+                            <Typography14 color="#292929">광주송정(06:59)</Typography14>
                             <RoundArrowRightIconImg src={RoundArrowRightImg} alt='round_arrow_right' />
-                            <Typography14 color="#292929">동탄(14:18)</Typography14>
+                            <Typography14 color="#292929">동탄(08:37)</Typography14>
                         </Frame1Wrapper>
                         <Line />
                         <Frame1Wrapper gap={0.3} style={{ padding: "0.9rem 0" }}>
@@ -52,11 +52,29 @@ const MySrt = () => {
                         <Frame3Wrapper>
                             <ColumnBox gap={0.5} ai="center" jc="center">
                                 <div style={{ padding: "6px 3px 6px 0px" }}>
-                                    <UsedSrtWrapper src={Used615Srt} alt='not_used_srt' />
+                                    <UsedSrtWrapper src={UsedSrt} alt='not_used_srt' />
                                 </div>
                                 <ColumnBox gap={0.1} ai="center">
                                     <Typography12 fontWeight={500} color="#333333">20241103</Typography12>
                                     <Typography12 fontWeight={500} color="#333333">15:13:29</Typography12>
+                                </ColumnBox>
+                            </ColumnBox>
+                            <ColumnBox gap={0.5} ai="center" jc="center">
+                                <div style={{ padding: "6px 3px 6px 0px" }}>
+                                    <UsedSrtWrapper src={UsedSrt} alt='not_used_srt' />
+                                </div>
+                                <ColumnBox gap={0.1} ai="center">
+                                    <Typography12 fontWeight={500} color="#333333">20241105</Typography12>
+                                    <Typography12 fontWeight={500} color="#333333">16:01:14</Typography12>
+                                </ColumnBox>
+                            </ColumnBox>
+                            <ColumnBox gap={0.5} ai="center" jc="center">
+                                <div style={{ padding: "6px 3px 6px 0px" }}>
+                                    <UsedSrtWrapper src={UsedSrt} alt='not_used_srt' />
+                                </div>
+                                <ColumnBox gap={0.1} ai="center">
+                                    <Typography12 fontWeight={500} color="#333333">20241108</Typography12>
+                                    <Typography12 fontWeight={500} color="#333333">16:04:28</Typography12>
                                 </ColumnBox>
                             </ColumnBox>
                             <ColumnBox gap={0.5} ai="center" jc="center">
@@ -68,20 +86,8 @@ const MySrt = () => {
                                     <UseingSrtWrapper src={RoundArrowRightUseingImg} alt='useing_srt' />
                                 </div>
                                 <ColumnBox gap={0.1} ai="center">
-                                    <Typography12 fontWeight={500} color="#5F1D4A">20241108</Typography12>
-                                    <Typography12 fontWeight={500} color="#5F1D4A">12:22:05</Typography12>
-                                </ColumnBox>
-                            </ColumnBox>
-                            <ColumnBox gap={0.9} ai="center" jc="center">
-                                <NotUsedSrtImgWrapper src={NotUsedSrtImg} alt='not_used_srt' />
-                                <ColumnBox gap={0.1} ai="center">
-                                    <Typography12 fontWeight={500} ls={-0.1} color="#5F1D4A">사용가능</Typography12>
-                                </ColumnBox>
-                            </ColumnBox>
-                            <ColumnBox gap={0.9} ai="center" jc="center">
-                                <NotUsedSrtImgWrapper src={NotUsedSrtImg} alt='not_used_srt' />
-                                <ColumnBox gap={0.1} ai="center">
-                                    <Typography12 fontWeight={500} ls={-0.1} color="#5F1D4A">사용가능</Typography12>
+                                    <Typography12 fontWeight={500} color="#5F1D4A">202411016</Typography12>
+                                    <Typography12 fontWeight={500} color="#5F1D4A">06:29:05</Typography12>
                                 </ColumnBox>
                             </ColumnBox>
                             <ColumnBox gap={0.9} ai="center" jc="center">

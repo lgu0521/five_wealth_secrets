@@ -105,7 +105,7 @@ const MySrt = () => {
                                     <UseingSrtWrapper src={RoundArrowRightUseingImg} alt='useing_srt' />
                                 </div>
                                 <ColumnBox gap={0.1} ai="center">
-                                    <Typography12 fontWeight={500} color="#5F1D4A">20241126</Typography12>
+                                    <Typography12 fontWeight={500} color="#5F1D4A">20241127</Typography12>
                                     <Typography12 fontWeight={500} color="#5F1D4A">04:58:07</Typography12>
                                 </ColumnBox>
                             </ColumnBox>

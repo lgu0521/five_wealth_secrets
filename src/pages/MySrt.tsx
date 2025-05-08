@@ -4,7 +4,7 @@ import RoundArrowRightImg from './round_arrow_right.png';
 import ChangeImg from './change.png';
 import QrCodeImg from './qr_code.png'
 import InfiniteLogoCarousel from './InfiniteLogoCarousel';
-import RoundArrowRightUseingImg from './srt_useing_602.png';
+import RoundArrowRightUseingImg from './srt_useing_652.png';
 import UsedGoSrt from './srt_602_used.png';
 import UsedBackSrt from './srt_661_used.png';
 import NotUsedSrtImg from './srt_not_used.png'
